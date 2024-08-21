@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDP Mouse Event</title>
+    <style>
+        .table-border {
+            width: 50%;
+            margin: 0 auto;
+        }
+        .bordered {
+            border: 1px solid black;
+        }
+        .span-2 {
+            padding: 5px 7px;
+            text-align: center;
+        }
+        .p-left {
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h4 style="text-align: center;">Different Types of Mouse Events</h4>
+        <h5 style="text-align: center;">Name: Jojo P. Bugarin</h5>
+        <h5 style="text-align: center;">31-ITE-01</h5>
+
+        <table class="table-border">
+            <tbody>
+                <tr>
+                    <td class="bordered span-2">
+                        <button id="button1">Click Me!</button>
+                    </td>
+                    <td class="bordered p-left">
+                        Fired when the user clicks an element.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bordered span-2">
+                        <button id="button2">Double Click Me!</button>
+                    </td>
+                    <td class="bordered p-left">
+                        Fired when the user double-clicks an element.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bordered span-2">
+                        <button id="button3">Mouse Down Event!</button>
+                    </td>
+                    <td class="bordered p-left">
+                        Fired when the user presses the mouse button down.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bordered span-2">
+                        <button id="button4">Mouse Up Event!</button>
+                    </td>
+                    <td class="bordered p-left">
+                        Fired when the user releases the mouse button.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bordered span-2">
+                        <p id="button5">Mouse Over</p>
+                    </td>
+                    <td class="bordered p-left">
+                        Fired when the user's mouse enters the element's area.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bordered span-2">
+                        <p id="button6">Mouse Out</p>
+                    </td>
+                    <td class="bordered p-left">
+                        Fired when the user's mouse leaves the element's area.
+                    </td>
+                </tr>
+                <tr>
+                    <td class="bordered span-2">
+                        <p id="button7">Mouse Move</p>
+                    </td>
+                    <td class="bordered p-left">
+                        Fired when the user's mouse moves within the element's area.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        const button1 = document.getElementById('button1');
+        button1.addEventListener('click', () => {
+            alert('You clicked the button!');
+        });
+
+        const button2 = document.getElementById('button2');
+        button2.addEventListener('dblclick', () => {
+            alert('You double-clicked the button!');
+        });
+
+        const button3 = document.getElementById('button3');
+        button3.addEventListener('mousedown', () => {
+            alert('You pressed the mouse button down!');
+        });
+
+        const button4 = document.getElementById('button4');
+        button4.addEventListener('mouseup', () => {
+            alert('You released the mouse button!');
+        });
+
+        const button5 = document.getElementById('button5');
+        button5.addEventListener('mouseover', () => {
+            alert('Mouse is over the button!');
+        });
+
+        const button6 = document.getElementById('button6');
+        button6.addEventListener('mouseout', () => {
+            alert('Mouse left the button!');
+        });
+
+        const button7 = document.getElementById('button7');
+        button7.addEventListener('mousemove', () => {
+            alert('Mouse is moving over the button!');
+        });
+    </script>
+</body>
+</html>  
